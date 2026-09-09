@@ -2,184 +2,426 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Throne Reborn — компьютерный клуб в Алматы</title>
     <meta
       name="description"
-      content="Throne Reborn — компьютерный клуб в Алматы, ул. Богенбай Батыра 176/48. Ryzen 5700X3D, RTX 4060, три уровня комфорта: Standard, Silver, Gold. Работаем 24/7."
+      content="Throne Reborn — компьютерный клуб в Алматы на Богенбай Батыра, 176/48. Ryzen 5 5700X3D, RTX 4060, мониторы до 360 Гц. Три зала: Standard, Silver, Gold. Работаем 24/7, от 800 ₸ в час."
     />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://berikbayeve.github.io/throne-reborn-sait/" />
+    <meta name="theme-color" content="#0b0b0d" />
+
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
     <meta property="og:title" content="Throne Reborn — компьютерный клуб в Алматы" />
     <meta
       property="og:description"
-      content="Топовое железо, три уровня комфорта, работаем круглосуточно. Игра начинается здесь."
+      content="Топовое железо, три уровня комфорта, круглосуточно. Игра начинается здесь."
     />
+    <meta property="og:url" content="https://berikbayeve.github.io/throne-reborn-sait/" />
     <meta
       property="og:image"
       content="https://berikbayeve.github.io/throne-reborn-sait/og-image.jpg"
     />
-    <meta name="theme-color" content="#0b0b0d" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EntertainmentBusiness",
+        "name": "Throne Reborn",
+        "description": "Компьютерный клуб в Алматы: три зала Standard, Silver и Gold, работаем круглосуточно.",
+        "url": "https://berikbayeve.github.io/throne-reborn-sait/",
+        "image": "https://berikbayeve.github.io/throne-reborn-sait/og-image.jpg",
+        "priceRange": "800–5000 ₸",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Богенбай Батыра, 176/48",
+          "addressLocality": "Алматы",
+          "addressCountry": "KZ"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "sameAs": ["https://www.instagram.com/thronereborn", "https://wa.me/message/6GAEB2IXIE6PG1"]
+      }
+    </script>
   </head>
   <body>
-    <header class="nav" id="top">
-      <div class="nav__inner">
-        <a href="#top" class="nav__brand">THRONE REBORN</a>
-        <nav class="nav__links">
+    <a class="skip-link" href="#main">К содержимому</a>
+
+    <header class="nav" data-nav>
+      <div class="container nav__inner">
+        <a class="nav__brand" href="#top" aria-label="Throne Reborn — на главную">
+          <img
+            class="nav__crest"
+            src="src/assets/logo/logo-transparent.png"
+            alt=""
+            width="40"
+            height="28"
+          />
+          <span>Throne Reborn</span>
+        </a>
+        <nav class="nav__menu" id="menu" aria-label="Разделы сайта">
           <a href="#about">О клубе</a>
           <a href="#tariffs">Тарифы</a>
           <a href="#contacts">Контакты</a>
+          <a
+            class="btn btn--primary btn--sm"
+            href="https://wa.me/message/6GAEB2IXIE6PG1"
+            target="_blank"
+            rel="noopener"
+            >Забронировать</a
+          >
         </nav>
-        <a href="#contacts" class="btn btn--sm">Забронировать</a>
+        <button
+          class="nav__burger"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-burger
+        >
+          <span></span><span></span>
+        </button>
       </div>
     </header>
 
-    <main>
-      <section class="hero" id="hero">
-        <div class="hero__bg">
-          <img
-            src="src/assets/photos/hall-wide.jpg"
-            alt="Зал компьютерного клуба Throne Reborn в Алматы"
-          />
-        </div>
-        <div class="hero__content fade-up">
-          <img class="hero__logo" src="src/assets/logo/logo-transparent.png" alt="Throne Reborn" />
-          <p class="eyebrow">Компьютерный клуб · Алматы</p>
-          <h1>Игра начинается здесь</h1>
-          <p class="hero__lead">
-            Throne Reborn — это топовое железо, идеальный сетап и атмосфера, в которой хочется
-            задержаться. Три уровня комфорта — Standard, Silver, Gold — здесь каждый находит свой
-            трон.
-          </p>
-          <div class="hero__badges">
-            <span>ул. Богенбай Батыра, 176/48</span>
-            <span>24/7</span>
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Компьютерный клуб · Алматы · 24/7</p>
+            <h1 class="hero__title">
+              <span class="line">Игра</span>
+              <span class="line">начинается</span>
+              <span class="line line--accent">здесь</span>
+            </h1>
+            <p class="hero__lead">
+              Throne Reborn — это топовое железо, идеальный сетап и атмосфера, в которой хочется
+              задержаться. Три уровня комфорта — Standard, Silver, Gold — здесь каждый находит свой
+              трон.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#tariffs">Смотреть тарифы</a>
+              <a
+                class="btn btn--ghost"
+                href="https://wa.me/message/6GAEB2IXIE6PG1"
+                target="_blank"
+                rel="noopener"
+                >Забронировать место</a
+              >
+            </div>
+            <p class="hero__address">ул. Богенбай Батыра, 176/48</p>
           </div>
-          <div class="hero__cta">
-            <a href="#tariffs" class="btn btn--primary">Смотреть тарифы</a>
-            <a href="#contacts" class="btn btn--ghost">Забронировать место</a>
-          </div>
-          <div class="hero__stats">
-            <div><strong>56</strong><span>ПК-станций</span></div>
-            <div><strong>300+</strong><span>постоянных клиентов</span></div>
-            <div><strong>3</strong><span>уровня комфорта</span></div>
-            <div><strong>24/7</strong><span>без выходных</span></div>
-          </div>
+
+          <figure class="hero__visual frame">
+            <div class="cut">
+              <picture>
+                <source srcset="src/assets/photos/hall-wide.webp" type="image/webp" />
+                <img
+                  src="src/assets/photos/hall-wide.jpg"
+                  alt="Игровой зал Throne Reborn: ряды станций с RGB-подсветкой и чёрным мраморным полом"
+                  width="1600"
+                  height="2400"
+                  fetchpriority="high"
+                />
+              </picture>
+            </div>
+            <div class="hero__crest-wrap">
+              <img
+                class="hero__crest"
+                src="src/assets/logo/logo-transparent.png"
+                alt="Герб Throne Reborn"
+                width="420"
+                height="297"
+              />
+            </div>
+          </figure>
         </div>
       </section>
 
-      <section class="about" id="about">
-        <div class="section-inner">
+      <section class="stats" aria-label="Клуб в цифрах">
+        <div class="container stats__row">
+          <div data-reveal><strong>56</strong><span>ПК-станций</span></div>
+          <div data-reveal><strong>300+</strong><span>постоянных клиентов</span></div>
+          <div data-reveal><strong>3</strong><span>уровня комфорта</span></div>
+          <div data-reveal><strong>24/7</strong><span>без выходных</span></div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container">
           <p class="eyebrow">О клубе</p>
-          <h2>Свой трон найдётся каждому</h2>
-          <div class="about__grid reveal-on-scroll">
-            <div class="about__lead">
+          <h2 class="section-title">Свой трон найдётся каждому</h2>
+
+          <div class="bento">
+            <figure class="bento__cell bento__cell--photo bento__cell--main" data-reveal>
+              <picture>
+                <source srcset="src/assets/photos/booking-screen.webp" type="image/webp" />
+                <img
+                  src="src/assets/photos/booking-screen.jpg"
+                  alt="Экран станции Throne Reborn с фирменным артом"
+                  width="1067"
+                  height="1600"
+                  loading="lazy"
+                />
+              </picture>
+              <figcaption>Фирменный экран каждой станции</figcaption>
+            </figure>
+
+            <div class="bento__cell bento__cell--lead" data-reveal>
               <p>
                 Throne Reborn — это топовое железо, идеальный сетап и атмосфера, в которой хочется
                 задержаться. Три уровня комфорта — Standard, Silver, Gold — здесь каждый находит
                 свой трон.
               </p>
             </div>
-            <ul class="about__perks">
-              <li>
-                <span class="about__perk-title">Климат-контроль</span>
-                <span class="about__perk-text"
-                  >Комфортная температура в зале в любое время суток</span
-                >
-              </li>
-              <li>
-                <span class="about__perk-title">Быстрый интернет</span>
-                <span class="about__perk-text"
-                  >Стабильное высокоскоростное соединение без просадок</span
-                >
-              </li>
-              <li>
-                <span class="about__perk-title">Сервис и атмосфера</span>
-                <span class="about__perk-text"
-                  >Дружелюбная команда клуба, здесь хочется задержаться</span
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="about__photo reveal-on-scroll">
-            <img
-              src="src/assets/photos/hall-monitors-row.jpg"
-              alt="Ряд игровых станций с фирменным оформлением Throne Reborn"
-            />
+
+            <div class="bento__cell bento__cell--perk" data-reveal>
+              <span class="bento__num">01</span>
+              <h3>Не душно даже в пик</h3>
+            </div>
+            <div class="bento__cell bento__cell--perk" data-reveal>
+              <span class="bento__num">02</span>
+              <h3>Без лагов в решающий момент</h3>
+            </div>
+            <div class="bento__cell bento__cell--perk" data-reveal>
+              <span class="bento__num">03</span>
+              <h3>Здесь хочется задержаться</h3>
+            </div>
+
+            <figure class="bento__cell bento__cell--photo bento__cell--wide" data-reveal>
+              <picture>
+                <source srcset="src/assets/photos/hall-monitors-row.webp" type="image/webp" />
+                <img
+                  src="src/assets/photos/hall-monitors-row.jpg"
+                  alt="Ряд игровых станций Throne Reborn с фирменным оформлением"
+                  width="1333"
+                  height="2000"
+                  loading="lazy"
+                />
+              </picture>
+              <figcaption>56 станций в трёх залах</figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="tariffs" id="tariffs">
-        <div class="section-inner">
+      <section class="section tariffs" id="tariffs">
+        <div class="container">
           <p class="eyebrow">Тарифы и характеристики</p>
-          <h2>Standard, Silver или Gold — выбирай свой трон</h2>
+          <h2 class="section-title">Выбери свой трон</h2>
 
-          <div class="period-switch" role="tablist" aria-label="Период тарифа">
-            <button type="button" class="period-switch__btn is-active" data-period="hour">
+          <div class="periods" role="tablist" aria-label="Период тарифа" data-periods>
+            <button
+              type="button"
+              role="tab"
+              class="periods__btn is-active"
+              aria-selected="true"
+              data-period="hour"
+            >
               1 час
             </button>
-            <button type="button" class="period-switch__btn" data-period="twoPlusOne">2+1</button>
-            <button type="button" class="period-switch__btn" data-period="threePlusTwo">3+2</button>
-            <button type="button" class="period-switch__btn" data-period="turboDay">
+            <button
+              type="button"
+              role="tab"
+              class="periods__btn"
+              aria-selected="false"
+              data-period="twoPlusOne"
+            >
+              2+1
+            </button>
+            <button
+              type="button"
+              role="tab"
+              class="periods__btn"
+              aria-selected="false"
+              data-period="threePlusTwo"
+            >
+              3+2
+            </button>
+            <button
+              type="button"
+              role="tab"
+              class="periods__btn"
+              aria-selected="false"
+              data-period="turboDay"
+            >
               Турбо день
             </button>
-            <button type="button" class="period-switch__btn" data-period="turboNight">
+            <button
+              type="button"
+              role="tab"
+              class="periods__btn"
+              aria-selected="false"
+              data-period="turboNight"
+            >
               Турбо ночь
             </button>
-            <button type="button" class="period-switch__btn" data-period="night">Ночь</button>
+            <button
+              type="button"
+              role="tab"
+              class="periods__btn"
+              aria-selected="false"
+              data-period="night"
+            >
+              Ночь
+            </button>
           </div>
 
-          <div class="tiers" id="tiers"><!-- rendered by main.js --></div>
+          <div class="tiers" id="tiers"></div>
+
+          <details class="price-table" data-reveal>
+            <summary>Все тарифы одной таблицей</summary>
+            <div class="price-table__scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Зал</th>
+                    <th scope="col">1 час</th>
+                    <th scope="col">2+1</th>
+                    <th scope="col">3+2</th>
+                    <th scope="col">Турбо день<br /><small>12:00–18:00</small></th>
+                    <th scope="col">Турбо ночь<br /><small>01:00–08:00</small></th>
+                    <th scope="col">Ночь<br /><small>22:00–08:00</small></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="row--standard">
+                    <th scope="row">Standard</th>
+                    <td>800 ₸</td>
+                    <td>1 600 ₸</td>
+                    <td>2 400 ₸</td>
+                    <td>2 000 ₸</td>
+                    <td>1 500 ₸</td>
+                    <td>3 000 ₸</td>
+                  </tr>
+                  <tr class="row--silver">
+                    <th scope="row">Silver</th>
+                    <td>1 000 ₸</td>
+                    <td>2 000 ₸</td>
+                    <td>3 000 ₸</td>
+                    <td>2 800 ₸</td>
+                    <td>2 000 ₸</td>
+                    <td>4 000 ₸</td>
+                  </tr>
+                  <tr class="row--gold">
+                    <th scope="row">Gold</th>
+                    <td>1 200 ₸</td>
+                    <td>2 400 ₸</td>
+                    <td>3 600 ₸</td>
+                    <td>3 600 ₸</td>
+                    <td>2 500 ₸</td>
+                    <td>5 000 ₸</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </details>
         </div>
       </section>
 
-      <section class="contacts" id="contacts">
-        <div class="contacts__bg">
-          <img src="src/assets/photos/signage-neon.jpg" alt="Фирменная вывеска Throne Reborn" />
-        </div>
-        <div class="section-inner contacts__inner">
-          <p class="eyebrow">Контакты</p>
-          <h2>Заходи в гости</h2>
-          <div class="contacts__grid reveal-on-scroll">
-            <div class="contacts__info">
-              <p><strong>Адрес</strong><br />ул. Богенбай Батыра, 176/48, Алматы</p>
-              <p><strong>График</strong><br />Круглосуточно, без выходных</p>
-              <div class="contacts__socials">
+      <section class="section contacts" id="contacts">
+        <div class="container contacts__grid">
+          <div class="contacts__copy" data-reveal>
+            <p class="eyebrow">Контакты</p>
+            <h2 class="section-title">Заходи в гости</h2>
+            <dl class="contacts__dl">
+              <dt>Адрес</dt>
+              <dd>ул. Богенбай Батыра, 176/48, Алматы</dd>
+              <dt>График</dt>
+              <dd>Круглосуточно, без выходных</dd>
+              <dt>Связь</dt>
+              <dd>
                 <a href="https://www.instagram.com/thronereborn" target="_blank" rel="noopener"
                   >Instagram</a
                 >
+                ·
                 <a href="https://wa.me/message/6GAEB2IXIE6PG1" target="_blank" rel="noopener"
                   >WhatsApp</a
                 >
-              </div>
+              </dd>
+            </dl>
+            <div class="contacts__actions">
+              <a
+                class="btn btn--primary"
+                href="https://go.2gis.com/r5L43"
+                target="_blank"
+                rel="noopener"
+                >Проехать</a
+              >
+              <a
+                class="btn btn--ghost"
+                href="https://wa.me/message/6GAEB2IXIE6PG1"
+                target="_blank"
+                rel="noopener"
+                >Написать в WhatsApp</a
+              >
             </div>
-            <a
-              class="btn btn--primary btn--lg"
-              target="_blank"
-              rel="noopener"
-              href="https://go.2gis.com/r5L43"
-              >Проехать</a
-            >
           </div>
+
+          <figure class="contacts__visual frame" data-reveal>
+            <div class="cut">
+              <picture>
+                <source srcset="src/assets/photos/signage-neon.webp" type="image/webp" />
+                <img
+                  src="src/assets/photos/signage-neon.jpg"
+                  alt="Неоновая вывеска Throne Reborn над игровыми станциями"
+                  width="1067"
+                  height="1600"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </figure>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__inner">
-        <span>© 2026 Throne Reborn</span>
-        <div class="footer__socials">
-          <a href="https://www.instagram.com/thronereborn" target="_blank" rel="noopener"
-            >Instagram</a
-          >
-          <a href="https://wa.me/message/6GAEB2IXIE6PG1" target="_blank" rel="noopener">WhatsApp</a>
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__brand" href="#top">
+            <img src="src/assets/logo/logo-transparent.png" alt="" width="48" height="34" />
+            <span>
+              <span class="footer__name">Throne Reborn</span>
+              <span class="footer__tag">Игра начинается здесь</span>
+            </span>
+          </a>
+          <nav class="footer__links" aria-label="Навигация в подвале">
+            <a href="#about">О клубе</a>
+            <a href="#tariffs">Тарифы</a>
+            <a href="#contacts">Контакты</a>
+            <a href="https://www.instagram.com/thronereborn" target="_blank" rel="noopener"
+              >Instagram</a
+            >
+            <a href="https://wa.me/message/6GAEB2IXIE6PG1" target="_blank" rel="noopener"
+              >WhatsApp</a
+            >
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 Throne Reborn · Алматы</span>
+          <span>ул. Богенбай Батыра, 176/48 · 24/7</span>
         </div>
       </div>
     </footer>
