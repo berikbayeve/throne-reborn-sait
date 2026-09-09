@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Original club photos (100MB+), optimized copies live in src/assets/photos
+Photo/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
