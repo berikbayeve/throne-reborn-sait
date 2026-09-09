@@ -6,7 +6,14 @@ This repository is just getting started — expect the structure and docs to evo
 
 ## Getting Started
 
-Clone the repo and follow along as setup instructions are added here.
+```bash
+npm install
+npm run dev
+```
+
+Other commands: `npm run build`, `npm run lint`, `npm run format`. See [CLAUDE.md](./CLAUDE.md) for full project conventions.
+
+Pushing to `main` auto-deploys the site to GitHub Pages.
 
 ## Contributing
 
