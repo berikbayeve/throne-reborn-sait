@@ -17,4 +17,4 @@ Pushing to `main` auto-deploys the site to GitHub Pages.
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or pull request to suggest changes. Thanks for you're interest in helping out.
+Contributions are welcome! Please open an issue or pull request to suggest changes. Thanks for your interest in helping out.
